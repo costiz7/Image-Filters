@@ -85,3 +85,164 @@
 .linkedin:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+#canvas {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.app-wrapper {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-selector {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    margin-bottom: 15px;
+}
+
+.btn-selector {
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-selector > button,
+.filter-effect,
+#btn-picker {
+    position: relative;
+    border: none;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(51, 123, 255);
+    width: 110px;
+    height: 50px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.btn-selector > button:nth-of-type(1) {
+    background-color: rgb(51, 123, 255);
+}
+
+.btn-selector > button:nth-of-type(2) {
+    background-color: rgb(46, 202, 49);
+}
+
+.btn-selector > button:nth-of-type(3) {
+    background-color: rgb(235, 229, 62);
+}
+
+.btn-selector > button:nth-of-type(4) {
+    background-color: rgb(193, 45, 45);
+}
+
+.btn-selector > button:hover,
+.filter-effect:hover,
+#btn-picker:hover {
+    filter:brightness(1.2);
+}
+
+.filter-selector {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-filters {
+    position: relative;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.slide-container {
+    position: relative;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#myRange {
+    width: 190px; 
+    cursor: pointer;
+}
+
+.slide-container > img {
+    position: relative;
+    height: 30px;
+}
+
+.color-picker {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.color-wrapper {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #ccc;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 10px;
+}

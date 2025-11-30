@@ -21,29 +21,35 @@
     <div class="app-wrapper">
         <div class="image-selector">
             <div class="image-container">
-                <img src="" alt="">
+                <canvas id="canvas"></canvas>
             </div>
             <div class="btn-selector">
-                <button>Import</button>
-                <button>Export</button>
-                <button>Reload</button>
-                <button>Remove</button>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                <button id="btn-import">Import</button>
+                <button id="btn-download">Download</button>
+                <button id="btn-original">Original</button>
+                <button id="btn-remove">Remove</button>
             </div>
         </div>
         <div class="filter-selector">
-            <div class="btn-filters">
-                <button>Grayscale</button>
-                <button>Sepia</button>
-                <button>blue</button>
-                <button>red</button>
-                <button>green</button>
+            <div class="filters">
+                <div class="btn-filters">
+                    <button class="filter-effect" data-effect="grayscale" disabled>Grayscale</button>
+                    <button class="filter-effect" data-effect="sepia" disabled>Sepia</button>
+                    <button class="filter-effect" data-effect="negative" disabled>Negative</button>
+                    <button class="filter-effect" data-effect="pixelate" disabled>Pixelate</button>
+                </div>
+                <div class="slide-container">
+                    <img src="./assets/sun.png" alt="sun">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
             </div>
             <div class="color-picker">
                 <div class="color-wrapper">
                     <div class="color"></div>
                 </div>
-                <input type="text" class="color-hex">
-                <button>Pick a color</button>
+                <input type="text" class="color-hex" placeholder="#FFFFFF">
+                <button id="btn-picker" disabled>Pick a color</button>
             </div>
         </div>
     </div>
