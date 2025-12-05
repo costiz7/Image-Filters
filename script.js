@@ -169,7 +169,7 @@ function applyPixelate(pixelSize) {
 
 btnOriginal.addEventListener('click', () => {
     if (originalImageData) {
-        stopPickingMode(); // Resetăm modurile
+        stopPickingMode();
         ctx.putImageData(originalImageData, 0, 0);
         brightnessSlider.value = 50;
     }
